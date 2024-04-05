@@ -1,16 +1,26 @@
 ﻿namespace Domain;
 
-public class BasePerson
-{
-    private Guid ID = Guid.NewGuid();
-}
-
 
 public class Person : BasePerson
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public FullName FullName { get; set; }
-    public string Gender { get; set; }
+    /// <summary>
+    /// Пол
+    /// </summary>
+    public Gender Gender { get; set; }
+    /// <summary>
+    /// Дата рождения
+    /// </summary>
     public DateTime Birthday { get; set; }
+    /// <summary>
+    /// Номер телефона
+    /// </summary>
     public string PhoneNumber { get; set; }
-    public string DiscordNic { get; set; }
+    /// <summary>
+    /// Ник Дискорда
+    /// </summary>
+    public string DiscordNick { get; set; }
 }
